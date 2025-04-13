@@ -1,4 +1,5 @@
 # Brave-Gemini Research MCP Server
+[![smithery badge](https://smithery.ai/badge/@falahgs/brave-gemini-research-mcp-server)](https://smithery.ai/server/@falahgs/brave-gemini-research-mcp-server)
 
 A modern MCP (Model Context Protocol) server implementation that provides AI assistants with web search capabilities via the Brave Search API and advanced research paper analysis with Google's Gemini model.
 
@@ -19,6 +20,14 @@ This project enables AI assistants like Claude to perform web searches and analy
 - 🛠️ **Extensible Design** - Easy to add new tools and capabilities
 
 ## Setup and Installation
+
+### Installing via Smithery
+
+To install brave-gemini-research-mcp-server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@falahgs/brave-gemini-research-mcp-server):
+
+```bash
+npx -y @smithery/cli install @falahgs/brave-gemini-research-mcp-server --client claude
+```
 
 ### Prerequisites
 

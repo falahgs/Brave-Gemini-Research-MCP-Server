@@ -1,0 +1,32 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - braveApiKey
+      - googleApiKey
+    properties:
+      braveApiKey:
+        type: string
+        description: Brave Search API key
+      googleApiKey:
+        type: string
+        description: Google API key for Gemini integration
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => ({
+      command: 'node',
+      args: ['dist/index.js'],
+      env: {
+        BRAVE_API_KEY: config.braveApiKey,
+        GOOGLE_API_KEY: config.googleApiKey,
+        NODE_ENV: 'production'
+      }
+    })
+  exampleConfig:
+    braveApiKey: example_brave_api_key
+    googleApiKey: example_google_api_key

@@ -31,7 +31,7 @@ This project enables AI assistants like Claude to perform web searches and analy
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/brave-gemini-research-mcp.git
+   git clone https://github.com/falahgs/brave-gemini-research-mcp.git
    cd brave-gemini-research-mcp
    ```
 

@@ -1,0 +1,17 @@
+{
+  "name": "mcp-tutorial",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "tsx": "^4.19.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.0",
+    "@modelcontextprotocol/sdk": "^1.9.0",
+    "dotenv": "^16.5.0"
+  }
+}
